@@ -1,0 +1,47 @@
+.form {
+    grid-area:main;
+}
+
+.head {
+    grid-area:header;
+    justify-self:center;
+
+}
+
+.footer {
+    grid-area:footer;   
+    justify-self: left;
+}
+
+.menu {
+    grid-area:menu;
+    justify-self: center;
+    align-items: center;
+    width:14em;
+    overflow:hidden
+}
+
+.criar {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.dot {
+    position:relative;
+    height: 220px;
+    width: 220px;
+    background-color: white;
+    border-radius: 50%;
+    border:black solid 4px;
+}
+
+.picture {
+    position:relative;
+    top:63px;
+    left:35px
+}
